@@ -1,0 +1,9 @@
+# Area-normalized scaling of ReefBudget calcification, macrobioerosion, and microbioerosion rates for use with CoralNet - Chagos
+The following code generates area-normalized calcification, macrobioerosion, and microbioerosion rates from ReefBudget methodologies (http://geography.exeter.ac.uk/reefbudget/; Perry et al., 2018; Perry and Lange 2019) for use with CoralNet image identification labels to support the integration of estimated carbonate production rates with CoralNet, an automated benthic image analysis platform (https://coralnet.ucsd.edu/; Beijbom et al., 2015). This code calculates calcification and bioerosion rates for the Chagos Archipelago following Courtney et al (2024) using a Chagos-specific ReefBudget spreadsheet.
+
+#### Inclusion of Bioerosion
+The default rates include coral calcification, CCA calcification, macrobioerosion, and microbioerosion to be consistent with ReefBudget calcification sheet outputs, but the include_bioerosion argument can be set to FALSE at the beginning of the script to calculate the gross carbonate production without any sources of bioerosion. Because rates have been adapted for benthic image labels, the resulting CoralNet total calcification estimates do not account for mobile sources of parrotfish or urchin bioerosion that are included in the net reef carbonate budget following ReefBudget methodologies. 
+
+#### Please cite the following data release for use of the area-normalized calcification and bioerosion rates as follows:
+
+Courtney TA, Lange ID, Pilly SS, Townsend JE, Chan S, Perry CT, Kriegman DJ, Andersson AJ (2024) Area-normalized scaling of ReefBudget calcification, macrobioerosion, and microbioerosion rates for use with CoralNet Version 2.0
